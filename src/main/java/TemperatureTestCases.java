@@ -25,5 +25,26 @@ public class TemperatureTestCases {
         double actual=temp.TemperatureToFahrenheit(120);
         Assertions.assertEquals(exp,actual);
     }
-    //Now th
+    //Now these test cases for the testing purpose of Celsius to Kelvin
+    @Test
+    public void testCase4()
+    {
+        double exp=273.15;
+        double actual=temp.TemperatureToKelvin(0);
+        Assertions.assertEquals(exp,actual);
+    }
+    @Test
+    public void testCase5()
+    {
+        double exp=318.15;
+        double actual=temp.TemperatureToKelvin(45);
+        Assertions.assertEquals(exp,actual);
+    }
+    @Test
+    public void testCase6()
+    {
+        double exp=381.15;
+        double actual=temp.TemperatureToKelvin(108);
+        Assertions.assertEquals(exp,actual);
+    }
 }
