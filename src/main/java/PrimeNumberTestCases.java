@@ -9,13 +9,6 @@ import java.util.Scanner;
 
 public class PrimeNumberTestCases {
     ImplementationClass  primeNumber=new ImplementationClass();
-    public Integer InputNumber()
-    {
-        System.out.println("Enter the Number:");
-        Scanner scanner=new Scanner(System.in);
-        Integer number=scanner.nextInt();
-        return number;
-    }
 
     @BeforeEach
     public void print()
@@ -26,9 +19,8 @@ public class PrimeNumberTestCases {
     public void isPrime()
     {
         Boolean exp=true;
-        Integer number=InputNumber();
 
-        Boolean actual=primeNumber.IsPrimeNumber(number);
+        Boolean actual=primeNumber.IsPrimeNumber(1);
 
         Assertions.assertEquals(actual,exp,"Not found");
 
