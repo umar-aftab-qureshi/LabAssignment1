@@ -96,6 +96,7 @@ public class ImplementationClass implements LabAssignment {
     }
 
     public double TemperatureToFahrenheit(double temp) {
-        return ((temp * (9/5)) +32);
+        double result=( temp * (1.8) + 32);
+        return result;
     }
 }
