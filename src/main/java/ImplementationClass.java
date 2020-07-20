@@ -74,6 +74,7 @@ public class ImplementationClass implements LabAssignment {
            return "Not both strings are Palindrome";
        }
 }
+//This is an extra method to check whether the string is palindrome or not for single string...
     public boolean isPalindrome(String s) {
         int i=0,j=s.length() -1;
         while( i < j)
@@ -88,7 +89,13 @@ public class ImplementationClass implements LabAssignment {
         return true;
 
     }
-    public Integer Temperature(Integer number) {
-        return null;
+    public double TemperatureToKelvin(double temp) {
+        //This method will convert the temperature to Kelvin...
+        return (temp + 273.15);
+
+    }
+
+    public double TemperatureToFahrenheit(double temp) {
+        return ((temp * (9/5)) +32);
     }
 }

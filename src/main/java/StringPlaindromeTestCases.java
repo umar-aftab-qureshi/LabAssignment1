@@ -21,4 +21,22 @@ public class StringPlaindromeTestCases {
 
 
     }
+    @Test
+    public void testCase3()
+    {
+        String exp="Not both strings are Palindrome";
+        String actual=string.palindromeString("ABBAr","ABBBvBA");
+        Assertions.assertEquals(exp,actual);
+
+
+    }
+    @Test
+    public void testCase4()
+    {
+        String exp="String 2 is palindrome";
+        String actual=string.palindromeString("ABBAr","MADAM");
+        Assertions.assertEquals(exp,actual);
+
+
+    }
 }
