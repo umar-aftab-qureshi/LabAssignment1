@@ -1,11 +1,7 @@
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Scanner;
 
 public class PrimeNumberTestCases {
     ImplementationClass  primeNumber=new ImplementationClass();
@@ -26,11 +22,13 @@ public class PrimeNumberTestCases {
 
     }
     @Test
-    public void isPrime1()
+    public void isPrime1  ()
     {
         Boolean exp=false;
+
         Boolean actual=primeNumber.IsPrimeNumber(4);
         Assertions.assertEquals(actual,exp,"Not found");
+
 
     }
     @Test

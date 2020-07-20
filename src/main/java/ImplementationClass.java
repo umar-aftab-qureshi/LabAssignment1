@@ -44,7 +44,16 @@ public class ImplementationClass implements LabAssignment {
     }
 
     public Double Average(Integer[] number) {
-        return null;
+        //This method will return the average of the elements that were present in the array..
+        double sum=0;
+        double avg;
+        int length_of_array=number.length;
+        for(int i=0;i<number.length;i++)
+        {
+            sum=sum+number[i];
+        }
+        avg=sum/length_of_array;
+        return avg;
     }
 
     public Boolean palindromeString(String string1, String string2) {
