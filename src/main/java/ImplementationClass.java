@@ -56,10 +56,38 @@ public class ImplementationClass implements LabAssignment {
         return avg;
     }
 
-    public Boolean palindromeString(String string1, String string2) {
-        return null;
-    }
+    public String palindromeString(String string1, String string2) {
+       if ( isPalindrome(string1) == true && isPalindrome(string2)==true)
+       {
+           return "Both Strings are Palindrome";
+       }
+       else if( isPalindrome(string1) == true && isPalindrome(string2)==false)
+       {
+           return "String 1 is palindrome";
+       }
+       else if( isPalindrome(string1)==false && isPalindrome(string2)==true)
+       {
+           return "String 2 is palindrome";
+       }
+       else
+       {
+           return "Not both strings are Palindrome";
+       }
+}
+    public boolean isPalindrome(String s) {
+        int i=0,j=s.length() -1;
+        while( i < j)
+        {
+            if (s.charAt(i) != s.charAt(j))
+            {
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
 
+    }
     public Integer Temperature(Integer number) {
         return null;
     }
